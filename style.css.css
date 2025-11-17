@@ -1,0 +1,312 @@
+/* General Styling */
+:root {
+    --dark-bg: #1e1e1e; /* Main Dark Background */
+    --accent-blue: #00bcd4; /* Bright Blue Accent */
+    --accent-green: #4caf50; /* Bright Green Accent */
+    --text-color: #ffffff; /* White Text */
+    --secondary-text: #b0b0b0; /* Light Gray Text */
+    --card-bg: #2b2b2b; /* Slightly Lighter Dark Card Background */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--card-bg);
+    padding: 15px 0;
+    border-bottom: 2px solid var(--accent-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--accent-green);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-blue);
+}
+
+.cta-link {
+    background-color: var(--accent-green);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: var(--dark-bg) !important;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-bottom: 5px solid var(--accent-blue);
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.title-text {
+    font-size: 1.5em;
+    color: var(--secondary-text);
+    margin-bottom: 30px;
+}
+
+.contact-quick p {
+    color: var(--accent-green);
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.primary-btn, .secondary-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--accent-blue);
+    color: var(--dark-bg);
+}
+
+.primary-btn:hover {
+    background-color: #00a4bd;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid var(--accent-green);
+    color: var(--text-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--accent-green);
+    color: var(--dark-bg);
+}
+
+/* General Section Styling */
+.section-padding {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: var(--accent-green);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accent-bg {
+    background-color: var(--card-bg);
+}
+
+/* About Section */
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: var(--secondary-text);
+}
+
+.contact-details {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+.green-icon {
+    color: var(--accent-green);
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-blue);
+}
+
+/* Services Grid */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: var(--dark-bg);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid var(--accent-blue);
+    transition: all 0.3s;
+}
+
+.service-item:hover {
+    background-color: #3a3a3a;
+    border-color: var(--accent-green);
+    transform: translateY(-5px);
+}
+
+.service-item i {
+    font-size: 2em;
+    color: var(--accent-green);
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.3em;
+    color: var(--text-color);
+}
+
+/* Placeholder and Contact Section */
+.placeholder-content {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-blue);
+    margin-bottom: 30px;
+}
+
+.placeholder-content ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.placeholder-content ul li {
+    padding: 5px 0;
+    color: var(--accent-green);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.free-audit-box {
+    background-color: var(--accent-blue);
+    color: var(--dark-bg);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.free-audit-box h3 {
+    color: var(--dark-bg);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.contact-form-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form-placeholder input,
+.contact-form-placeholder textarea {
+    padding: 15px;
+    border: 1px solid var(--secondary-text);
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+.contact-form-placeholder textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: var(--secondary-text);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .hero-section {
+        padding: 60px 0;
+    }
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+    .title-text {
+        font-size: 1.2em;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
