@@ -255,7 +255,7 @@ h2 {
 
 .placeholder-content ul li {
 border-radius: 5px;
-    color: var(--dark-bg) !important;
+    background-color: var(--card-bg) !important;
     font-weight: bold;
 }
 
@@ -333,6 +333,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
