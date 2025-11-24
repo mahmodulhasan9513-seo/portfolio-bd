@@ -144,11 +144,11 @@ nav ul li a:hover {
 
 /* Fix for input type="submit" styling */
 input.hero-btn {
-    -webkit-appearance: none; /* For consistent styling across browsers */
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
-} /* <--- এখানে বন্ধনীটি যোগ করা হয়েছে */
+} /* <--- The missing closing brace } is added here */
 
 /* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
@@ -295,12 +295,13 @@ h2 {
     gap: 15px;
 }
 
+/* Contact Form Input Color Fix */
 .contact-form-placeholder input,
 .contact-form-placeholder textarea {
     padding: 15px;
     border: 1px solid var(--secondary-text);
-    background-color: var(--card-bg); /* Input ব্যাকগ্রাউন্ড ঠিক করা হলো */
-    color: var(--text-color);
+    background-color: var(--card-bg); /* Input background color set to dark grey */
+    color: var(--text-color); /* Input text color set to white */
     border-radius: 5px;
 }
 
@@ -342,6 +343,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
