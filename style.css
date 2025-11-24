@@ -254,8 +254,9 @@ h2 {
 }
 
 .placeholder-content ul li {
-    padding: 5px 0;
-    color: var(--accent-green);
+border-radius: 5px;
+    color: var(--dark-bg) !important;
+    font-weight: bold;
 }
 
 .contact-grid {
@@ -332,6 +333,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
