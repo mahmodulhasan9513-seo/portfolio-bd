@@ -141,6 +141,16 @@ nav ul li a:hover {
     background: #00aacc;
 }
 
+/* Add this to your style.css if you use input type="submit" */input.hero-btn {
+
+-webkit-appearance: none; /* For consistent styling across browsers */
+
+-moz-appearance: none;
+
+appearance: none;
+
+cursor: pointer;
+
 /* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
     .hero-container {
@@ -333,6 +343,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
